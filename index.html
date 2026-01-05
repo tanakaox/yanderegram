@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YandereGram</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      border-bottom: 1px solid #222;
+      background-color: #000;
+    }
+    header h1 {
+      font-size: 22px;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: #bbb;
+      margin-left: 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    nav a:hover { color: #ff3b3b; }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .warning {
+      border: 1px solid #ff3b3b;
+      padding: 15px;
+      margin-bottom: 25px;
+      font-size: 13px;
+      color: #ffb3b3;
+      text-align: center;
+    }
+
+    .post {
+      border: 1px solid #222;
+      margin-bottom: 30px;
+      background-color: #000;
+    }
+    .post-header {
+      padding: 10px;
+      font-size: 13px;
+      color: #ccc;
+      border-bottom: 1px solid #222;
+    }
+    .post-image {
+      background-color: #111;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      font-size: 12px;
+    }
+    .post-body {
+      padding: 10px;
+      font-size: 13px;
+      color: #ddd;
+    }
+    .tags { color: #ff3b3b; }
+
+    .forum {
+      border: 1px solid #222;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    .forum h2 { margin-top: 0; color: #ff3b3b; }
+    .forum li { font-size: 13px; margin-bottom: 8px; color: #ccc; }
+
+    .login {
+      border: 1px solid #222;
+      padding: 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .login button {
+      background-color: #ff3b3b;
+      border: none;
+      padding: 10px 20px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #666;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>YandereGram</h1>
+  <nav>
+    <a href="#feed">Feed</a>
+    <a href="#foro">Foro</a>
+    <a href="#login">Cuenta</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <div class="warning">
+    Este no es un lugar seguro para amar poco.<br>
+    Si solo miras… alguien más ya te está mirando.
+  </div>
+
+  <div id="feed">
+    <div class="post">
+      <div class="post-header">@akira_devotion</div>
+      <div class="post-image">[ imagen no disponible ]</div>
+      <div class="post-body">
+        Lo vi hoy otra vez. No me vio… creo.<br>
+        <span class="tags">#mio #observandote</span>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">@mika_only_you</div>
+      <div class="post-image">[ imagen no disponible ]</div>
+      <div class="post-body">
+        Sonrió cuando alguien más le habló. No volverá a pasar.<br>
+        <span class="tags">#celos #amorreal</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="forum" id="foro">
+    <h2>Foro</h2>
+    <ul>
+      <li>¿Está mal guardar capturas de cada conversación?</li>
+      <li>¿Cuántas veces es normal pasar por su casa?</li>
+      <li>¿Amar duele o solo duele cuando no te eligen?</li>
+    </ul>
+  </div>
+
+  <div class="login" id="login">
+    <p>Crear cuenta</p>
+    <button>Continuar con Google</button>
+    <p style="font-size:11px;color:#666;margin-top:10px;">
+      (Simulación visual — inicio de sesión real requiere servidor)
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  Sitio ficticio • Parodia • No real • Solo diversión
+</footer>
+
+</body>
+</html>
